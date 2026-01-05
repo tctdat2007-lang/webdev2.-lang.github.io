@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    let nums = [];
+
+    while (true) {
+        let n = Number(prompt("Enter number (0 to stop)"));
+        if (n === 0) break;
+        nums.push(n);
+    }
+
+    nums.sort((a, b) => b - a);
+    console.log(nums);
+</script>
+</body>
+</html>
