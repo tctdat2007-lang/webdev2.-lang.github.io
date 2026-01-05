@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    let n = Number(prompt("Number of participants"));
+    let names = [];
+
+    for (let i = 0; i < n; i++) {
+        names.push(prompt("Name of participant " + (i + 1)));
+    }
+
+    names.sort();
+
+    let ol = "<ol>";
+    for (let name of names) {
+        ol += "<li>" + name + "</li>";
+    }
+    ol += "</ol>";
+
+    document.body.innerHTML = ol;
+</script>
+</body>
+</html>
