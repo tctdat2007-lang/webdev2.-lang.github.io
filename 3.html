@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    let dogs = [];
+
+    for (let i = 0; i < 6; i++) {
+        dogs.push(prompt("Dog name " + (i + 1)));
+    }
+
+    dogs.sort().reverse();
+
+    let ul = "<ul>";
+    for (let d of dogs) {
+        ul += "<li>" + d + "</li>";
+    }
+    ul += "</ul>";
+
+    document.body.innerHTML = ul;
+</script>
+</body>
+</html>
