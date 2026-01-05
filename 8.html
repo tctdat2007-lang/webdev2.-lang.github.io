@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    function concat(arr) {
+        let str = "";
+        for (let item of arr) {
+            str += item;
+        }
+        return str;
+    }
+
+    let names = ["Johnny", "DeeDee", "Joey", "Marky"];
+    document.body.innerHTML = concat(names);
+</script>
+</body>
+</html>
